@@ -1,0 +1,17 @@
+#! /bin/bash
+read -p"enter number of values " n
+for((i=0;j=1;i<n;i++))
+read -p " enter the number $[j++] " num[$i]
+done
+esum=0
+osum=0
+for value in ${num[@]}
+do
+if [$ [val%2] -eq 0] then
+let esum=esum+val
+else
+let osum=osum+val
+fi
+done
+echo " the value of even numbers : $esum "
+echo " the value of odd numbers : $osum "
